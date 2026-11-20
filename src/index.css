@@ -1,0 +1,71 @@
+@import '@fontsource-variable/space-grotesk';
+@import '@fontsource-variable/jetbrains-mono';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-deck-950 font-sans text-neutral-200 antialiased;
+}
+
+::selection {
+  background: rgba(255, 178, 36, 0.25);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded-none border-2 border-solid border-transparent bg-deck-600 bg-clip-padding;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-deck-500;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-1.5 rounded px-4 py-2 text-sm font-semibold tracking-wide transition-colors disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-amber {
+    @apply btn bg-signal text-black hover:bg-signal-hover;
+  }
+  .btn-ghost {
+    @apply btn border border-deck-600 bg-transparent font-medium text-neutral-400 hover:border-deck-500 hover:bg-deck-800 hover:text-white;
+  }
+  .btn-icon {
+    @apply inline-flex h-9 w-9 items-center justify-center rounded border border-transparent text-neutral-500 transition-colors hover:border-deck-600 hover:bg-deck-800 hover:text-signal disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .input {
+    @apply w-full rounded border border-deck-600 bg-deck-900 px-3.5 py-2.5 text-sm text-neutral-200 placeholder-neutral-600 outline-none transition-colors focus:border-signal/60;
+  }
+  .card {
+    @apply rounded-panel border border-deck-700 bg-deck-900;
+  }
+  .label {
+    @apply mb-1 block text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500;
+  }
+  .num {
+    @apply font-mono tabular-nums;
+  }
+  .chip {
+    @apply rounded-sm border border-deck-700 bg-deck-900 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-neutral-500;
+  }
+  .section-title {
+    @apply font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-500;
+  }
+}
