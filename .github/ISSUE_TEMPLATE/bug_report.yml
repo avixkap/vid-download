@@ -1,0 +1,56 @@
+name: Bug report
+description: Something isn't working as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. If a single site fails to download, first try **Settings > Re-check / update**, since site changes are usually fixed by a newer yt-dlp.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Paste https://...
+        2. Pick 1080p, MP4
+        3. Click Download
+        4. ...
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Site or example URL
+      description: Leave this out if the content is private.
+  - type: textarea
+    id: error
+    attributes:
+      label: Error message
+      description: Copy the exact error text shown in the app, if any.
+      render: text
+  - type: input
+    id: app-version
+    attributes:
+      label: VidDownload version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: windows-version
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 24H2"
+    validations:
+      required: true
+  - type: input
+    id: ytdlp-version
+    attributes:
+      label: yt-dlp version
+      description: Shown in Settings > Components.

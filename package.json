@@ -2,6 +2,17 @@
   "name": "vid-download-tauri",
   "private": true,
   "version": "1.0.0",
+  "description": "Desktop video and audio downloader for 1000+ sites (Tauri 2 + React + yt-dlp)",
+  "license": "MIT",
+  "author": "avixkap",
+  "homepage": "https://github.com/avixkap/vid-download#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avixkap/vid-download.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avixkap/vid-download/issues"
+  },
   "type": "module",
   "scripts": {
     "dev:vite": "vite",
