@@ -91,8 +91,9 @@ src-tauri/               Rust backend
   src/store.rs           settings, history and schedule persistence
   src/scheduler.rs       starts scheduled downloads
   capabilities/          permissions granted to the UI
+  icons/app-icon.svg     icon source (regenerate all sizes: npx tauri icon src-tauri/icons/app-icon.svg)
   tauri.conf.json        window, bundle and installer config
-scripts/                 dev helpers (icon generator, end-to-end test driver)
+scripts/                 dev helpers (end-to-end test driver)
 ```
 
 ## Troubleshooting
