@@ -12,7 +12,7 @@ Note that most "this site doesn't work" problems come from [yt-dlp](https://gith
 
 ## Development setup
 
-1. Install the [Tauri prerequisites](https://tauri.app/start/prerequisites/): Node.js 20+, Rust stable, and the Microsoft C++ Build Tools.
+1. Install the [Tauri prerequisites](https://tauri.app/start/prerequisites/): Node.js 22+, Rust stable, and the Microsoft C++ Build Tools.
 2. Clone the repo and install dependencies:
 
    ```bash

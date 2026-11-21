@@ -54,7 +54,7 @@ App data (components, settings, history) lives in `%APPDATA%\com.viddownload.app
 
 **Prerequisites**
 
-- [Node.js](https://nodejs.org) 20 or newer
+- [Node.js](https://nodejs.org) 22 or newer
 - [Rust](https://rustup.rs) (stable)
 - [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/) with the "Desktop development with C++" workload
 
