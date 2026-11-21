@@ -1,3 +1,4 @@
+import type { JSX } from 'react'
 import { api } from '../api'
 import { useStore } from '../store'
 

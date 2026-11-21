@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { type JSX, useEffect, useRef } from 'react'
 import { api } from './api'
 import { useStore } from './store'
 import Hero from './components/Hero'
