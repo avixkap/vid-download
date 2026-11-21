@@ -24,7 +24,7 @@ body {
 }
 
 ::selection {
-  background: rgba(255, 178, 36, 0.25);
+  background: rgba(52, 211, 153, 0.25);
 }
 
 ::-webkit-scrollbar {
@@ -45,7 +45,7 @@ body {
   .btn {
     @apply inline-flex items-center justify-center gap-1.5 rounded px-4 py-2 text-sm font-semibold tracking-wide transition-colors disabled:cursor-not-allowed disabled:opacity-40;
   }
-  .btn-amber {
+  .btn-accent {
     @apply btn bg-signal text-black hover:bg-signal-hover;
   }
   .btn-ghost {

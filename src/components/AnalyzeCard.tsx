@@ -180,14 +180,14 @@ export default function AnalyzeCard({ info, onRemove }: { info: VideoInfo; onRem
                 </select>
               </div>
               <label className="flex cursor-pointer items-center gap-1.5 pb-2 text-xs text-neutral-400">
-                <input type="checkbox" className="accent-[#ffb224]" checked={opts.subtitles} onChange={(e) => patch({ subtitles: e.target.checked })} />
+                <input type="checkbox" className="accent-signal" checked={opts.subtitles} onChange={(e) => patch({ subtitles: e.target.checked })} />
                 Subtitles
               </label>
             </>
           )}
 
           <button
-            className={cx('btn-amber num ml-auto min-w-[7rem]', job?.status === 'error' && 'bg-red-400 hover:bg-red-400')}
+            className={cx('btn-accent num ml-auto min-w-[7rem]', job?.status === 'error' && 'bg-red-400 hover:bg-red-400')}
             onClick={add}
             disabled={!!jobId}
           >

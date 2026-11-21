@@ -14,9 +14,9 @@ module.exports = {
           500: '#44444d'
         },
         signal: {
-          DEFAULT: '#ffb224',
-          hover: '#ffc14d',
-          dim: 'rgba(255,178,36,0.12)'
+          DEFAULT: '#34d399',
+          hover: '#5fdeb0',
+          dim: 'rgba(52,211,153,0.12)'
         }
       },
       fontFamily: {

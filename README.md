@@ -6,7 +6,7 @@
 Paste a link, pick the quality, hit download.
 
 [![CI](https://github.com/avixkap/vid-download/actions/workflows/ci.yml/badge.svg)](https://github.com/avixkap/vid-download/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-ffb224.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-34d399.svg)](LICENSE)
 ![Platform: Windows](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-131316.svg)
 ![Built with Tauri](https://img.shields.io/badge/built%20with-Tauri%202-24c8db.svg)
 

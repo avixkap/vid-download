@@ -33,7 +33,7 @@ The frontend lives in `src/` (React + TypeScript + Tailwind) and the backend in 
 
 - Create a branch from `main`, for example `fix/playlist-progress` or `feat/proxy-setting`.
 - Keep pull requests focused: one fix or feature per PR.
-- **Match the surrounding code.** Follow the existing naming, file layout and comment style. UI changes should use the existing Studio Deck classes in `src/index.css` (`.card`, `.btn-amber`, `.btn-ghost`, `.label`, `.num`, `.chip`, `.section-title`) and the `deck` / `signal` colors rather than new ad-hoc styles.
+- **Match the surrounding code.** Follow the existing naming, file layout and comment style. UI changes should use the existing Studio Deck classes in `src/index.css` (`.card`, `.btn-accent`, `.btn-ghost`, `.label`, `.num`, `.chip`, `.section-title`) and the `deck` / `signal` colors rather than new ad-hoc styles.
 - If you add a new Tauri command, register it in `src-tauri/src/lib.rs` and add a typed wrapper in `src/api.ts`. If it needs a new plugin permission, add it to `src-tauri/capabilities/default.json`.
 - Keep the TypeScript types in `src/types.ts` in sync with the serde structs in `src-tauri/src/models.rs` (fields are camelCase on both sides).
 

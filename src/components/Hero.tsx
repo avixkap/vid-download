@@ -92,7 +92,7 @@ export default function Hero(): JSX.Element {
                 Paste
               </button>
               <button
-                className="btn-amber px-6 py-1.5 text-xs"
+                className="btn-accent px-6 py-1.5 text-xs"
                 onClick={analyze}
                 disabled={urls.length === 0 || analyzing || !binaries?.ytdlp}
               >

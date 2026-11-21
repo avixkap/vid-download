@@ -47,7 +47,7 @@ export default function BinaryBanner(): JSX.Element | null {
             </span>
           </div>
         ) : (
-          <button className="btn-amber" onClick={install}>
+          <button className="btn-accent" onClick={install}>
             Install components
           </button>
         )}

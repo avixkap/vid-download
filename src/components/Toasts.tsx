@@ -59,7 +59,7 @@ function ToastCard({ toast }: { toast: Toast }): JSX.Element {
         )}
         {done && toast.filePath && (
           <div className="mt-2 flex gap-2">
-            <button className="btn-amber px-3 py-1 text-xs" onClick={() => api.openPath(toast.filePath!)}>
+            <button className="btn-accent px-3 py-1 text-xs" onClick={() => api.openPath(toast.filePath!)}>
               Play
             </button>
             <button className="btn-ghost px-3 py-1 text-xs" onClick={() => api.showInFolder(toast.filePath!)}>

@@ -49,10 +49,10 @@ export default function SchedulerModal(): JSX.Element {
             </select>
           </div>
           <label className="flex cursor-pointer items-center gap-1.5 pb-2.5 text-xs text-neutral-400">
-            <input type="checkbox" className="accent-[#ffb224]" checked={audioOnly} onChange={(e) => setAudioOnly(e.target.checked)} />
+            <input type="checkbox" className="accent-signal" checked={audioOnly} onChange={(e) => setAudioOnly(e.target.checked)} />
             Audio only
           </label>
-          <button className="btn-amber" onClick={add} disabled={!/^https?:\/\/.+/i.test(url.trim())}>
+          <button className="btn-accent" onClick={add} disabled={!/^https?:\/\/.+/i.test(url.trim())}>
             Schedule
           </button>
         </div>
