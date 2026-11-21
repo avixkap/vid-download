@@ -4,7 +4,14 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    # packages that must be upgraded together share a group, including major versions
     groups:
+      react:
+        patterns: ["react", "react-dom", "@types/react", "@types/react-dom"]
+      vite:
+        patterns: ["vite", "@vitejs/*"]
+      tauri:
+        patterns: ["@tauri-apps/*"]
       npm-minor-patch:
         update-types: [minor, patch]
 
@@ -13,6 +20,8 @@ updates:
     schedule:
       interval: weekly
     groups:
+      tauri:
+        patterns: ["tauri", "tauri-*"]
       cargo-minor-patch:
         update-types: [minor, patch]
 
