@@ -1,7 +1,7 @@
 {
   "name": "vid-download-tauri",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Desktop video and audio downloader for 1000+ sites (Tauri 2 + React + yt-dlp)",
   "license": "MIT",
   "author": "avixkap",
