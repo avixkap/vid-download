@@ -39,6 +39,11 @@
     "shortDescription": "Download video and audio from 1000+ sites",
     "longDescription": "VidDownload is a small desktop front-end for yt-dlp: paste a link, pick the quality and download video or audio from YouTube, TikTok, X, Instagram, Vimeo and 1000+ other sites.",
     "createUpdaterArtifacts": false,
+    "windows": {
+      "nsis": {
+        "installerIcon": "icons/icon.ico"
+      }
+    },
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
