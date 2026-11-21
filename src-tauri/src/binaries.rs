@@ -95,7 +95,7 @@ fn extract_ffmpeg(zip_path: &Path, bin_dir: &Path) -> Result<(), String> {
     let mut archive = zip::ZipArchive::new(file).map_err(|e| e.to_string())?;
     for i in 0..archive.len() {
         let mut entry = archive.by_index(i).map_err(|e| e.to_string())?;
-        let name = entry.name().replace('\\', "/");
+        let name = entry.name().map_err(|e| e.to_string())?.replace('\\', "/");
         let base = name.rsplit('/').next().unwrap_or("").to_lowercase();
         let wanted = matches!(
             base.as_str(),
