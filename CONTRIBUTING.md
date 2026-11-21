@@ -64,7 +64,9 @@ Never ship a build made with `tauri.e2e.conf.json`, because it exposes a debuggi
 
 1. Bump the version in `package.json`, `src-tauri/Cargo.toml` and `src-tauri/tauri.conf.json` (keep all three the same).
 2. Commit, then tag and push: `git tag v1.0.1 && git push origin v1.0.1`.
-3. The **Release** workflow builds the installer and creates a **draft** GitHub Release. Review it, then click **Publish**.
+3. The **Release** workflow builds the installer and creates a **draft** GitHub Release with install notes and a changelog of the PRs merged since the last release. Add a short highlights section if you like, then click **Publish**.
+
+The changelog is grouped by PR label (see `.github/release.yml`): `enhancement`, `bug`, `security`, `documentation` and `dependencies`. Label PRs before merging so they land in the right section; add `skip-changelog` to leave one out.
 
 ## Commit messages
 

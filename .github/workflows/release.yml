@@ -41,3 +41,15 @@ jobs:
             Builds are not code-signed yet, so Windows SmartScreen or Defender may warn; see the README's Troubleshooting section.
           releaseDraft: true
           prerelease: false
+
+      # sections come from .github/release.yml
+      - name: Append changelog to release notes
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          gh release view "$TAG" --json body --jq .body > notes.md
+          printf '\n' >> notes.md
+          gh api "repos/${{ github.repository }}/releases/generate-notes" -f tag_name="$TAG" --jq .body >> notes.md
+          gh release edit "$TAG" --notes-file notes.md
