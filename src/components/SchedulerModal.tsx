@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { type JSX, useState } from 'react'
 import { api } from '../api'
 import { useStore } from '../store'
 import type { Quality } from '../types'

@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { type JSX, useEffect } from 'react'
 import { api } from '../api'
 import { useStore, type Toast } from '../store'
 import { cx } from '../utils'
